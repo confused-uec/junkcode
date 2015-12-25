@@ -13,18 +13,18 @@
 #include <getopt.h>
 
 int main(int argc, char **argv){
-	int n=1,l=10;
-	char c;
-	while(c = getopt(argc,argv,"n:l:"),c!=-1){
-		switch(c){
-			case 'n':
-				n = atoi(optarg);
-				break;
-			case 'l':
-				l = atoi(optarg);
-				break;
-		}
-	}
+    int n=1,l=10;
+    char c;
+    while(c = getopt(argc,argv,"n:l:"),c!=-1){
+        switch(c){
+            case 'n':
+                n = atoi(optarg);
+                break;
+            case 'l':
+                l = atoi(optarg);
+                break;
+        }
+    }
 
     //乱数発生器の初期化
     std::random_device seedGenerater;
@@ -33,11 +33,11 @@ int main(int argc, char **argv){
     std::uniform_int_distribution<int> dist(0, 3);
     char ATGC[] = {'A','T','G','C'};
 
-	for(int i=0;i<n;i++){
-		for(int j=0;j<l;j++){
-			std::cout << ATGC[dist(engine)];
-		}
-		std::cout << std::endl;
-	}
-	return 0;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<l;j++){
+            std::cout << ATGC[dist(engine)];
+        }
+        std::cout << std::endl;
+    }
+    return 0;
 }
