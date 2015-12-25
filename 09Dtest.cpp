@@ -1,10 +1,10 @@
-/**	09Dtest.cpp **/
+/** 09Dtest.cpp **/
 
 //コンパイル
-//	g++ -o 09Dtest 09Dtest.cpp
+//  g++ -o 09Dtest 09Dtest.cpp
 
 //実行
-//	./09Dtest -n 3 -l 10
+//  ./09Dtest -n 3 -l 10
 // -n 出力パターンの行数(default:1)
 // -l 出力パターンの長さ(default:10)
 
